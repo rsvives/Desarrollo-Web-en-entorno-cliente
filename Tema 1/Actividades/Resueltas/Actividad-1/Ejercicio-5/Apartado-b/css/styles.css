@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.pink {
+	width: 64px;
+	height: 64px;
+	background: rgb(234, 169, 240);
+	border: solid black;
+	margin: 10px;
+}
+.green {
+	width: 64px;
+	height: 64px;
+	background: rgb(160, 240, 128);
+	border: solid black;
+	margin: 10px;
+}
+.blue {
+	width: 64px;
+	height: 64px;
+	background: rgb(88, 131, 165);
+	border: solid black;
+	margin: 10px;
+}
