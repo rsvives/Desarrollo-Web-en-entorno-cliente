@@ -8,4 +8,4 @@ function addList() {
 	listElement.innerHTML = valueInput;
 	list.appendChild(listElement);
 }
-btn.onclick = 
+btn.onclick = addList;
