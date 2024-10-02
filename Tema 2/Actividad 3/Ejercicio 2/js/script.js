@@ -15,6 +15,6 @@ function crear() {
 }
 
 function mostrar() {
-	let texto = 'Datos cuenta: ' + 'Nombre: ' + cuenta.nombre + ' Apellidos: ' + cuenta.apellidos + ' Numero de cuenta ' + ' Saldo: ' + cuenta.saldo;
+	let texto = 'Datos cuenta: ' + 'Nombre: ' + cuenta.nombre + ' Apellidos: ' + cuenta.apellidos + ' Numero de cuenta: ' + cuenta.numeroCuenta + ' Saldo: ' + cuenta.saldo;
 	console.log(texto);
 }
