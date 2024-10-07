@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#out,
+#over,
+input {
+	padding: 5%;
+	border: solid red;
+	width: 20%;
+	height: 20%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	margin: 5em;
+}
