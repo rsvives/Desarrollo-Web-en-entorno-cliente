@@ -12,4 +12,4 @@ buttonOver.addEventListener('mouseOver', hoverIn, false);
 function hoverOut() {
 	alert('Salimos del div');
 }
-buttonOut.addEventListener('mouseOut', hoverOut, false);
+buttonOut.addEventListener('mouseout', hoverOut, false);
