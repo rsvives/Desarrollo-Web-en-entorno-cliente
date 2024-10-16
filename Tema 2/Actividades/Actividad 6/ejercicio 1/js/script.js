@@ -1,3 +1,6 @@
+let data = new Array();
+
+
 function save() {
 	//0. crear un array para almacenar el nombre y el salario
 
@@ -21,7 +24,6 @@ function save() {
 
 	//4. crear array de datos
 
-	let data = new Array();
 
 	//5. hacer push de array persona dentro de array de datos
 
@@ -29,5 +31,15 @@ function save() {
 
 	//6. mostrar array de datos
 
-	console.log(data);
+	// console.log(data);
+}
+
+
+function show() {
+	//1. comprobar que puedo leer "data"
+
+	//2. iterar el array data  y por cada registro crear un párrafo (paso opcional)
+
+	//3. Borrar el paso anterior y hacer lo mismo pero con una tabla
+
 }
