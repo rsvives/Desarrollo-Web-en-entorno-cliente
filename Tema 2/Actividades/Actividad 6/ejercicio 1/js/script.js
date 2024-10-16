@@ -44,21 +44,12 @@ function show() {
 	data.forEach((person) => {
 		let rowTablePerson = document.createElement('tr');
 		// console.log(person[0] + ',' + person[1]);
-
-		//opción 1: (iterando)
-		person.forEach(field => {
-			// console.log(field)
-			let columnTablePerson = document.createElement('td')
-			columnTablePerson.innerText = field
-			rowTablePerson.append(columnTablePerson)
-		})
-
-		//opción 2: (innerHTML)
-		// rowTablePerson.innerHTML = `
-		// 	<td>${person[0]}</td>
-		// 	<td>${person[1]}</td>
-		// `
-
-		tablePerson.append(rowTablePerson)
+		person.forEach((field) => {
+			console.log(field);
+			let columnTablePerson = document.createElement('td');
+			columnTablePerson.innerText = field;
+			rowTablePerson.append(columnTablePerson);
+		});
+		tablePerson.append(rowTablePerson);
 	});
 }
