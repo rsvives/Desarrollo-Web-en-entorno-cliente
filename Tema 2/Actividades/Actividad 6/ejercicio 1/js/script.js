@@ -38,16 +38,27 @@ function show() {
 	console.log(data);
 
 	//2. iterar el array data  y por cada registro crear un párrafo (paso opcional)
-	let tablePerson = document.createElement('table');
-	let column1TablePerson = document.createElement('td');
-	let column2TablePerson = document.createElement('td');
+	let tablePerson = document.querySelector('table');
+	// let column1TablePerson = document.createElement('td');
+	// let column2TablePerson = document.createElement('td');
 	data.forEach((person) => {
 		let rowTablePerson = document.createElement('tr');
 		// console.log(person[0] + ',' + person[1]);
-		textPerson.innerText = `Nombre: ${person[0]}, Salario: ${person[1]}`;
-	});
-	let main = document.querySelector('main');
-	main.append(textPerson);
 
-	//3. Borrar el paso anterior y hacer lo mismo pero con una tabla
+		//opción 1: (iterando)
+		person.forEach(field => {
+			// console.log(field)
+			let columnTablePerson = document.createElement('td')
+			columnTablePerson.innerText = field
+			rowTablePerson.append(columnTablePerson)
+		})
+
+		//opción 2: (innerHTML)
+		// rowTablePerson.innerHTML = `
+		// 	<td>${person[0]}</td>
+		// 	<td>${person[1]}</td>
+		// `
+
+		tablePerson.append(rowTablePerson)
+	});
 }
