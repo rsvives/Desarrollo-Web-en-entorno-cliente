@@ -1,6 +1,5 @@
 let data = new Array();
 
-
 function save() {
 	//0. crear un array para almacenar el nombre y el salario
 
@@ -24,7 +23,6 @@ function save() {
 
 	//4. crear array de datos
 
-
 	//5. hacer push de array persona dentro de array de datos
 
 	data.push(person);
@@ -34,12 +32,22 @@ function save() {
 	// console.log(data);
 }
 
-
 function show() {
 	//1. comprobar que puedo leer "data"
 
+	console.log(data);
+
 	//2. iterar el array data  y por cada registro crear un párrafo (paso opcional)
+	let tablePerson = document.createElement('table');
+	let column1TablePerson = document.createElement('td');
+	let column2TablePerson = document.createElement('td');
+	data.forEach((person) => {
+		let rowTablePerson = document.createElement('tr');
+		// console.log(person[0] + ',' + person[1]);
+		textPerson.innerText = `Nombre: ${person[0]}, Salario: ${person[1]}`;
+	});
+	let main = document.querySelector('main');
+	main.append(textPerson);
 
 	//3. Borrar el paso anterior y hacer lo mismo pero con una tabla
-
 }
