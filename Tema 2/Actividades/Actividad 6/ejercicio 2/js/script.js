@@ -1,21 +1,14 @@
-function show() {
-	let inputValueMonth = document.getElementById('month').value;
-	let inputValueDay = document.getElementById('day').value;
-	let inputValueHour = document.getElementById('hour').value;
-	let inputValueEvent = document.getElementById('event').value;
-	let calendarOK = false;
-	if ((inputValueMonth > 0) & (inputValueMonth < 31)) {
-		calendarOK = true;
-	}
-	if ((inputValueDay > 0) & (inputValueDay < 31)) {
-		calendarOK = true;
-	}
-	if ((inputValueHour > 1) & (inputValueHour < 12)) {
-		calendarOK = true;
-	}
-	if (calendarOK) {
-		let textCalendar = document.createElement('p');
-		textCalendar.innerText = 'Evento : ' + inputValueEvent + ' , Mes : ' + inputValueMonth + ' , Dia : ' + inputValueDay + ' , Hora : ' + inputValueHour;
-		document.body.append(textCalendar);
-	}
+const months = new Array();
+const month = document.getElementById('month').value;
+const days = new Array();
+const day = document.getElementById('day').value;
+const hours = new Array();
+const hour = document.getElementById('hour').value;
+
+function save() {
+	// Meter el valor del input mes en 1 mes
+    for (let month = 0; month < 12; month++) {
+        months[month] 
+        
+    }
 }

@@ -1,5 +1,8 @@
-let img = document.getElementById('change-img');
-let btn = document.getElementById('btn-change');
+const img = document.getElementById('change-img');
+const btn = document.getElementById('btn-change');
+/**
+ * Función que cambia la imagen dependiendo de la imagen
+ */
 function changeIMG() {
 	if (img.src.match('img1')) {
 		img.src = './img/img2.jpg';
