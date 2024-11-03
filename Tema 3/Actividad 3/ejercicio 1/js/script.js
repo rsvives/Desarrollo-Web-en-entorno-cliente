@@ -1,4 +1,6 @@
-function form() {
+
+function saveInLocalStorage() {
+	console.log('saving in local storage')
 	let inputs = document.querySelectorAll('input');
 	let inputUser = inputs[0].value;
 	let inputPassword = inputs[1].value;
@@ -6,6 +8,5 @@ function form() {
 }
 function load() {
 	let button = document.querySelector('button');
-	button.onclick = form();
+	button.onclick = saveInLocalStorage;
 }
-document.body.onload = load();
