@@ -6,10 +6,11 @@
 		<title>Actividad 2 - Ejercicio 1A</title>
 		<script src="./js/script.js"></script>
 	</head>
-	<body>
+	<body onload="createCookies()">
 		<main>
 			<h1>Pulsa aqui 👇 para ver más detalle de la cookie en cuestión</h1>
-			<button type="button" onclick="showCookies()">Ver cookies</button>
+			<input type="text" id="inputCookie" placeholder="Escribe el nombe" />
+			<button type="button" onclick="findCookie()">Ver cookies</button>
 		</main>
 	</body>
 </html>
