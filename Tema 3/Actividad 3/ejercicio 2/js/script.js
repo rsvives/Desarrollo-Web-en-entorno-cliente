@@ -1,29 +1,26 @@
-function load() {
-	let permanentUser = localStorage.getItem('permanentUser');
-	let diaryUser = localStorage.getItem('diaryUser');
-	if (permanentUser == undefined) {
-		document.getElementById('result').innerHTML = '<br><br>Primera vez de acceso';
-		localStorage.setItem('permanentUser', true);
-	} else {
-		document.getElementById('result').innerHTML = '<br><br>Ya has accedido';
-		localStorage.setItem('permanentUser', true);
+function count() {
+	let fechaUltimaVisita = new Date(localStorage.getItem('fechaUltimaVisita')); //ej: ayer
+	let visitasHoy = Number(localStorage.getItem('visitasHoy'));
+
+	if (fechaUltimaVisita === undefined || fechaUltimaVisita === null) {
+		fechaUltimaVisita = new Date();
 	}
-	if (diaryUser == undefined) {
-		document.getElementById('result').innerHTML += '<br><br>Es la primera vez que te conectas hoy';
-		let date = new Date();
-		let text = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
-		localStorage.setItem('permanentUser', text);
-	} else {
-		let todayDate = new Date();
-		let text = todayDate.getDate() + '/' + todayDate.getMonth() + '/' + todayDate.getFullYear();
-		if (diaryUser === text) {
-			document.getElementById('result').innerHTML += '<br><br>Ya te has conectado hoy';
-		} else {
-			localStorage.setItem('diaryUser', text);
-		}
+	if (visitasHoy === undefined || visitasHoy === null) {
+		visitasHoy = 1;
 	}
-}
-function removeLocalStorage() {
-	localStorage.removeItem('permanentUser');
-	localStorage.removeItem('diaryUser');
+
+	let hoy = new Date();
+
+	if (fechaUltimaVisita < hoy) {
+		console.log('primera visita de hoy');
+		fechaUltimaVisita = new Date();
+		visitasHoy = 1;
+	} else {
+		console.log('hoy ya se ha visitado la página');
+		visitasHoy++;
+	}
+	console.log('La fecha de la ultima visita es ', fechaUltimaVisita);
+	console.log(visitasHoy);
+	localStorage.setItem('fechaUltimaVisita', fechaUltimaVisita);
+	localStorage.setItem('visitasHoy', visitasHoy);
 }
