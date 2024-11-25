@@ -1,0 +1,180 @@
+{
+    // Autocompletado de rutas en HTML y PHP (configuración de Emmet)
+    "emmet.includeLanguages": {
+        "php": "html"
+    },
+    "html-css-class-completion.enableEmmetSupport": true,
+    // Prettier settings para agregar punto y coma en PHP y JS
+    "prettier.semi": true,
+    // Autocompletado en HTML y PHP
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.parameterHints.enabled": true,
+    // Autocompletar rutas de archivos en HTML, CSS y PHP
+    "files.associations": {
+        "*.html": "html",
+        "*.php": "php"
+    },
+    // Autocompletar rutas en HTML
+    "html.suggest.angular1": false,
+    "html.suggest.emptyElements": true,
+    "html.suggest.references": true,
+    "html.suggest.showFiles": true,
+    // Habilitar el autocompletado de rutas en PHP
+    "php.suggest.basic": true,
+    // Habilitar el autocompletado de rutas para archivos de estilo
+    "css.suggest.autoImports": true,
+    // Habilitar la adición de punto y coma en JS y PHP
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    // Formateo automático de código PHP (usar Prettier como formateador)
+    "[php]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // Formatear archivos JavaScript con Prettier
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // Otros ajustes generales
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoClosingComments": "always",
+    // Desactivar Breadcrumbs
+    "breadcrumbs.enabled": false,
+    // Nivel de zoom de la ventana
+    "window.zoomLevel": 1,
+    // Configuración de Prettier
+    "prettier.requireConfig": true,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.printWidth": 1000000,
+    "prettier.tabWidth": 2,
+    "prettier.phpEndOfLine": "auto",
+    "prettier.bracketSameLine": true,
+    "prettier.insertPragma": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.experimentalTernaries": true,
+    "prettier.enableDebugLogs": true,
+    "prettier.singleAttributePerLine": true,
+    "prettier.useTabs": true,
+    "arrowParens": "avoid",
+    "bracketSameLine": true,
+    "bracketSpacing": false,
+    "semi": true,
+    "experimentalTernaries": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "quoteProps": "as-needed",
+    "trailingComma": "none",
+    "singleAttributePerLine": true,
+    "htmlWhitespaceSensitivity": "css",
+    "vueIndentScriptAndStyle": true,
+    "proseWrap": "never",
+    "insertPragma": false,
+    "printWidth": 80,
+    "requirePragma": false,
+    "tabWidth": 2,
+    "useTabs": false,
+    "embeddedLanguageFormatting": "auto",
+    // Configuración de la ventana de inicio
+    "window.newWindowProfile": "Default",
+    "workbench.startupEditor": "none",
+    // Tema de color y otros aspectos visuales
+    "workbench.colorTheme": "Shades of Purple (Super Dark)",
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Cascadia Code",
+    "workbench.iconTheme": "material-icon-theme",
+    // Configuración de la tabulación
+    "editor.insertSpaces": false, // Usar tabulaciones en lugar de espacios
+    "editor.tabSize": 4, // Tamaño de tabulación (4 espacios para tabuladores)
+    "editor.detectIndentation": true, // No detectar automáticamente la indentación
+    // Auto Image Path Updater
+    "autoImagePathUpdater.enable": true,
+    "autoImagePathUpdater.updateHtml": true,
+    "autoImagePathUpdater.updateCss": true,
+    "autoImagePathUpdater.updateJavascript": true,
+    "autoImagePathUpdater.updateJson": true,
+    "autoImagePathUpdater.extensions": [
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".gif",
+        ".svg"
+    ],
+    // Mejora de sugerencias
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    // Desactivar la validación de JavaScript y TypeScript
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false,
+    // Configuración de archivos abiertos
+    "window.openFilesInNewWindow": "off",
+    // Brackets con colores para mejor visibilidad
+    "editor.bracketPairColorization.enabled": true,
+    // Habilitar ligaduras en las fuentes
+    "editor.fontLigatures": true,
+    // Guardado automático de archivos
+    "files.autoSave": "onWindowChange",
+    // Limpiar espacios innecesarios al guardar
+    "files.trimTrailingWhitespace": true,
+    // Cerrar VSCode cuando no haya archivos abiertos
+    "window.closeWhenEmpty": true,
+    // Configuración para no restaurar ventanas previas
+    "window.restoreWindows": "none",
+    // Colapsar todos los archivos en el explorador
+    "explorer.autoReveal": false,
+    // Cerrar todos los archivos abiertos al salir
+    "window.closeBehavior": "all",
+    // Terminal y otros ajustes
+    "terminal.integrated.fontFamily": "'Cascadia Code'",
+    "workbench.colorCustomizations": {},
+    "terminal.integrated.env.windows": {},
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDelete": false,
+    "doki.wallpaper.path": "C:\\Users\\nikos\\Desktop\\luxa.org-opacity-changed-saitama-dark-2560x1080-19846.png",
+    "doki.background.path": "C:\\Users\\nikos\\Desktop\\luxa.org-opacity-changed-saitama-dark-2560x1080-19846.png",
+    "doki.background.anchor": "C:\\Users\\nikos\\Desktop\\luxa.org-opacity-changed-saitama-dark-2560x1080-19846.png",
+    "doki.statusbar.name": "C:\\Users\\nikos\\Desktop\\luxa.org-opacity-changed-saitama-dark-2560x1080-19846.png",
+    "liveServer.settings.port": 5500,
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "php"
+    ],
+    "path-intellisense.autoTriggerNextSuggestion": true,
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.ignoreTsConfigBaseUrl": true,
+    "path-autocomplete.extensionOnImport": true,
+    "path-autocomplete.triggerOutsideStrings": true,
+    "path-autocomplete.useBackslash": true,
+    "path-autocomplete.useSingleBackslash": true,
+    // Mejoras generales
+    "files.autoSaveDelay": 1000,
+    "editor.formatOnType": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "explorer.compactFolders": false,
+    "workbench.editor.enablePreview": true,
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.fontSize": 14,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.guides.indentation": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.guides.highlightActiveIndentation": true,
+    "editor.smoothScrolling": true,
+    "editor.wordWrap": "on",
+    "errorLens.errorBackground": "#ff000033",
+    "errorLens.errorForeground": "#ff0000",
+    "errorLens.warningBackground": "#ffa50033",
+    "errorLens.warningForeground": "#ffa500",
+    "gitlens.currentLine.enabled": true,
+    "workbench.preferredDarkColorTheme": "Shades of Purple",
+    "workbench.preferredHighContrastColorTheme": "Shades of Purple",
+    "workbench.preferredHighContrastLightColorTheme": "Shades of Purple",
+    "workbench.preferredLightColorTheme": "Shades of Purple",
+    "prettier.proseWrap": "never",
+    "git.openRepositoryInParentFolders": "never",
+
+}
