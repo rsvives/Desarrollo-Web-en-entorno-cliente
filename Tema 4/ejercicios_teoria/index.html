@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <form action="la acción del formulario" name="miFormulario" target="_blank" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+
+
+        <input type="checkbox" name="nuevaVentana" id="nuevaVentana" value="hola mundo">
+        <label for="nuevaVentana">Abrir en nueva ventana?</label>
+
+
+        <button type="button" onclick="enviar(this.form)">enviar</button>
+    </form>
+</body>
+
+</html>
